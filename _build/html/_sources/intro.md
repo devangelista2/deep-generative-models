@@ -1,7 +1,7 @@
 # An Introduction to Deep Generative Models
 
 **Instructor:** Davide Evangelista (DISI, University of Bologna)  
-**Teaching period:** May – June 2026  
+**Teaching period:** May - June 2026  
 **Course year:** First or Second Year PhD  
 **Duration:** 12 hours  
 **PhD credits:** 2.4  
@@ -23,7 +23,8 @@ By the end of the course, students will:
 - Gain in-depth knowledge of key generative model families, including:
   - Variational Autoencoders (VAEs)
   - Generative Adversarial Networks (GANs)
-  - Diffusion Models  
+  - Diffusion Models
+  - Flow Matching Models
 - Develop the ability to implement these models independently  
 - Learn how to integrate generative models into their research workflows  
 - Acquire the necessary background to further explore the scientific literature in the field  
@@ -34,9 +35,9 @@ The course is designed to balance theoretical insights with practical components
 
 In the first part of the course, we will introduce the probabilistic and mathematical foundations that underlie generative modeling, with particular attention to latent variable models and likelihood-based approaches. These concepts will then be progressively specialized and extended when studying specific model families.
 
-In the subsequent lectures, we will focus on three major classes of deep generative models, namely Variational Autoencoders, Generative Adversarial Networks, and Diffusion Models. For each of these, we will discuss the theoretical principles, the training procedures, and the main challenges that arise in practice. The laboratory sessions will mirror the theoretical content, guiding students through the implementation of these models and encouraging experimentation.
+In the subsequent lectures, we will focus on the major classes of deep generative models for image generation, namely Variational Autoencoders, Generative Adversarial Networks, Diffusion Models, and Flow Matching Models. For each of these, we will discuss the theoretical principles, the training procedures, and the main challenges that arise in practice. The laboratory sessions will mirror the theoretical content, guiding students through the implementation of these models and encouraging experimentation.
 
-Throughout the course, emphasis will be placed not only on how these models work, but also on their limitations, assumptions, and appropriate use in research settings.
+Throughout the course, emphasis will be placed not only on how these models work, but also on their limitations, assumptions, and appropriate use in research settings. If time allows, we will also explore selected applications of deep generative models, with a particular focus on inverse problems such as super-resolution, image colorization, and deblurring.
 
 ## Schedule and Tentative Topics
 
@@ -55,8 +56,8 @@ Each session will include both theoretical and practical components.
   *Lab:* implementation and experimentation with GANs  
 
 - **June 24, 2026 (14:00–17:00)**  
-  Diffusion models: principles, training procedures, and recent advances  
-  *Lab:* implementation of a basic diffusion model and discussion of applications  
+  Diffusion and Flow Matching models: principles, training procedures, and recent advances  
+  *Lab:* implementation of a basic model and discussion of applications  
 
 ## Prerequisites
 
