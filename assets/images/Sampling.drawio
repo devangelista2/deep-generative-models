@@ -1,0 +1,25 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Pagina-1" id="YkbpCBeL1XQbHO1gJXAW">
+    <mxGraphModel dx="751" dy="552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QJJcR_qHkGTv-Xlbs_BK-1" value="" style="shape=stencil(7VbLboMwEPyWHnyM5EdD6LFKm0/oNXLAbaw6NjIkgb+vwYaUJUENveSAhAT78O54WI+M2Drf80wgijU/CMTeEKWJOWRKlNtU5oWVu2Mhjd4mSnDtgi5z79MIwd4+e5vGweZ5JpLCO0/cSr5TwkdcPfMtzjItQg2p98LKoo6yd4RfXU79sPWnseLLmqNOe4E2/LRYuI+NVEqkdUcruHs557XkjNftBoE2fDCnev+lRxT2UIE9IroZKZEcra9BAhVtlWATvPSOkoaEYFfBXoYFJevbVbCjSTBWAEYU91GsAAoKUBAMYLSw74NBut0GB8N9HKTji4LGHZLnZR9Jl3EnFEjJpVPbOoK/po+EYohkEieUAU4onBA4IjGgZDAjq0mMDIcEEDKYkhfISAyA/PHQKKl/nbtLlX8UmXZ4lcnFzSy2dv4bCuJkyinQyFIvUx8yl40E4pZ8o1WFZr2a9WrWq8fXq3EF8FeaK4ubZYNrTOP1V67G8QM=);whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="QJJcR_qHkGTv-Xlbs_BK-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="360" as="sourcePoint" />
+            <mxPoint x="240" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QJJcR_qHkGTv-Xlbs_BK-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="360" as="sourcePoint" />
+            <mxPoint x="560" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -2,8 +2,36 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: 00-overview/index
 parts:
-  - caption: Getting Started
+  - caption: Course Intro
+    chapters:
+      - file: intro
+  - caption: Foundations
+    chapters:
+      - file: 01-neural-networks/foundations
+      - file: 02-generative-models/introduction
+      - file: 03-probabilistic-foundations/random-variables-and-latent-models
+      - file: 02-generative-models/evaluation-metrics
+  - caption: Variational Autoencoders
+    chapters:
+      - file: 04-variational-autoencoders/elbo-and-learning
+      - file: 04-variational-autoencoders/implementation
+  - caption: Generative Adversarial Networks
+    chapters:
+      - file: 05-gans/adversarial-learning
+      - file: 05-gans/implementation-and-variants
+  - caption: Diffusion Models
+    chapters:
+      - file: 06-diffusion-models/discrete-diffusion
+      - file: 06-diffusion-models/score-based-modeling
+      - file: 06-diffusion-models/prompted-generation-and-modern-use
+      - file: 06-diffusion-models/implementation
+  - caption: Flow Matching
+    chapters:
+      - file: 07-flow-matching/flow-matching
+      - file: 07-flow-matching/implementation
+  - caption: Setup and References
     chapters:
       - file: intro/environment-setup
+      - file: 08-references/further-reading

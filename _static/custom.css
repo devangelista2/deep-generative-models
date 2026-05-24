@@ -196,6 +196,16 @@ p, li {
 
 p + p { margin-top: 0.8em; }
 
+strong {
+  font-weight: 650;
+  color: #102a52;
+}
+
+em {
+  font-style: italic;
+  color: #243447;
+}
+
 a {
   color: var(--ci-accent);
   text-decoration: none;
@@ -334,6 +344,38 @@ div.important > .admonition-title::after {
   color: var(--ci-imp-ink);
 }
 
+/* numerical example */
+.admonition.numerical-example, div.numerical-example {
+  border-color: rgba(28, 63, 122, 0.28);
+  border-left-width: 5px;
+  background:
+    linear-gradient(180deg, rgba(28, 63, 122, 0.07) 0%, rgba(252, 251, 248, 0.95) 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.45),
+    0 12px 26px rgba(20, 25, 32, 0.06) !important;
+}
+.admonition.numerical-example > .admonition-title,
+div.numerical-example > .admonition-title {
+  background:
+    linear-gradient(90deg, rgba(28, 63, 122, 0.12) 0%, rgba(28, 63, 122, 0.06) 100%);
+  color: var(--ci-accent);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.admonition.numerical-example > .admonition-title::after,
+div.numerical-example > .admonition-title::after {
+  color: var(--ci-accent);
+}
+.admonition.numerical-example p,
+div.numerical-example p,
+.admonition.numerical-example li,
+div.numerical-example li {
+  font-size: 0.99rem;
+}
+
 /* Shared shape overrides */
 .admonition, div.admonition {
   border-radius: var(--ci-r-sm);
@@ -344,6 +386,170 @@ div.important > .admonition-title::after {
 .admonition p, div.admonition p {
   font-family: var(--font-serif);
   font-size: 0.98rem;
+}
+
+/* ── Theorem / Proof Environments ───────────────────────────────── */
+/* Override sphinx-proof's bright default palette so theorem-like
+   blocks feel like part of the same book design language. */
+
+:root {
+  --ci-proof-surface: rgba(252, 251, 248, 0.9);
+  --ci-proof-surface-strong: rgba(247, 245, 239, 0.95);
+  --ci-proof-border: rgba(28, 63, 122, 0.2);
+  --ci-proof-rule: rgba(28, 63, 122, 0.34);
+  --ci-proof-title: #16386d;
+  --ci-proof-muted: #5f6c7a;
+  --ci-proof-shadow: 0 10px 24px rgba(20, 25, 32, 0.05);
+
+  --ci-theorem-bg: rgba(28, 63, 122, 0.045);
+  --ci-theorem-title-bg: rgba(28, 63, 122, 0.075);
+  --ci-lemma-bg: rgba(22, 101, 52, 0.045);
+  --ci-lemma-title-bg: rgba(22, 101, 52, 0.075);
+  --ci-definition-bg: rgba(180, 83, 9, 0.04);
+  --ci-definition-title-bg: rgba(180, 83, 9, 0.075);
+  --ci-remark-bg: rgba(82, 96, 110, 0.05);
+  --ci-remark-title-bg: rgba(82, 96, 110, 0.085);
+  --ci-example-bg: rgba(136, 19, 55, 0.04);
+  --ci-example-title-bg: rgba(136, 19, 55, 0.07);
+}
+
+div.proof.admonition {
+  border: 1px solid var(--ci-proof-border) !important;
+  border-left: 3px solid var(--ci-proof-rule) !important;
+  border-radius: 14px !important;
+  background: var(--ci-proof-surface) !important;
+  box-shadow: var(--ci-proof-shadow) !important;
+  overflow: hidden;
+  margin: 1.35rem 0 1.5rem;
+}
+
+div.proof.admonition > p.admonition-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 !important;
+  padding: 0.72rem 1rem 0.7rem 1rem !important;
+  background: var(--ci-proof-surface-strong) !important;
+  border-bottom: 1px solid rgba(20, 25, 32, 0.07);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600 !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ci-proof-title) !important;
+}
+
+div.proof.admonition > p.admonition-title::before {
+  content: none !important;
+}
+
+div.proof.admonition > p.admonition-title::after {
+  content: none !important;
+  display: none !important;
+  color: var(--ci-proof-title) !important;
+}
+
+div.proof.admonition > p.admonition-title > span.caption-number {
+  font-weight: 700 !important;
+  color: var(--ci-proof-title) !important;
+}
+
+div.proof.admonition > section.theorem-content,
+div.proof.admonition > .admonition-content,
+div.proof.admonition > p:not(.admonition-title),
+div.proof.admonition > div.math,
+div.proof.admonition > div.section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+div.proof.admonition > section.theorem-content {
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+}
+
+div.proof.admonition > section.theorem-content > :first-child,
+div.proof.admonition > :not(.admonition-title):first-of-type {
+  margin-top: 0;
+}
+
+div.proof.admonition p,
+div.proof.admonition li {
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+div.proof.admonition div.math.notranslate {
+  margin: 1rem 1rem;
+}
+
+div.proof.admonition#proof,
+div.proof.admonition[id="proof"] {
+  background: rgba(250, 249, 245, 0.98) !important;
+  border-left-color: rgba(82, 96, 110, 0.38) !important;
+}
+
+div.proof.admonition#proof > p.admonition-title,
+div.proof.admonition[id="proof"] > p.admonition-title {
+  background: rgba(82, 96, 110, 0.06) !important;
+  color: #394656 !important;
+}
+
+div.proof.admonition#proof > p.admonition-title::after,
+div.proof.admonition[id="proof"] > p.admonition-title::after,
+div.proof.admonition#proof > p.admonition-title > span.caption-number,
+div.proof.admonition[id="proof"] > p.admonition-title > span.caption-number {
+  color: #394656 !important;
+}
+
+div.theorem.proof.admonition {
+  background: linear-gradient(180deg, var(--ci-theorem-bg) 0%, var(--ci-proof-surface) 100%) !important;
+}
+
+div.theorem.proof.admonition > p.admonition-title {
+  background: var(--ci-theorem-title-bg) !important;
+}
+
+div.lemma.proof.admonition,
+div.proposition.proof.admonition,
+div.corollary.proof.admonition {
+  background: linear-gradient(180deg, var(--ci-lemma-bg) 0%, var(--ci-proof-surface) 100%) !important;
+}
+
+div.lemma.proof.admonition > p.admonition-title,
+div.proposition.proof.admonition > p.admonition-title,
+div.corollary.proof.admonition > p.admonition-title {
+  background: var(--ci-lemma-title-bg) !important;
+}
+
+div.definition.proof.admonition,
+div.assumption.proof.admonition,
+div.notation.proof.admonition {
+  background: linear-gradient(180deg, var(--ci-definition-bg) 0%, var(--ci-proof-surface) 100%) !important;
+}
+
+div.definition.proof.admonition > p.admonition-title,
+div.assumption.proof.admonition > p.admonition-title,
+div.notation.proof.admonition > p.admonition-title {
+  background: var(--ci-definition-title-bg) !important;
+}
+
+div.remark.proof.admonition,
+div.observation.proof.admonition {
+  background: linear-gradient(180deg, var(--ci-remark-bg) 0%, var(--ci-proof-surface) 100%) !important;
+}
+
+div.remark.proof.admonition > p.admonition-title,
+div.observation.proof.admonition > p.admonition-title {
+  background: var(--ci-remark-title-bg) !important;
+}
+
+div.example.proof.admonition {
+  background: linear-gradient(180deg, var(--ci-example-bg) 0%, var(--ci-proof-surface) 100%) !important;
+}
+
+div.example.proof.admonition > p.admonition-title {
+  background: var(--ci-example-title-bg) !important;
 }
 
 /* ── Code ────────────────────────────────────────────────────────── */
@@ -615,4 +821,61 @@ cite > a.reference.internal:hover {
     padding: 1.1rem 1rem 1.8rem;
   }
   h1 { font-size: 1.85rem; }
+}
+
+/* ── Theorems and proofs ────────────────────────────────────────── */
+.proof,
+.prf-theorem,
+.prf-lemma,
+.prf-proposition,
+.prf-corollary,
+.prf-definition {
+  border-radius: var(--ci-r-sm);
+  border: 1px solid var(--ci-line);
+  box-shadow: var(--ci-shadow-sm);
+  margin: 1.4rem 0;
+  overflow: hidden;
+}
+
+.proof .admonition-title,
+.prf-theorem .admonition-title,
+.prf-lemma .admonition-title,
+.prf-proposition .admonition-title,
+.prf-corollary .admonition-title,
+.prf-definition .admonition-title {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+
+.prf-theorem,
+.prf-lemma,
+.prf-proposition,
+.prf-corollary,
+.prf-definition {
+  background: rgba(28, 63, 122, 0.045);
+  border-color: rgba(28, 63, 122, 0.18);
+}
+
+.prf-theorem .admonition-title,
+.prf-lemma .admonition-title,
+.prf-proposition .admonition-title,
+.prf-corollary .admonition-title,
+.prf-definition .admonition-title {
+  color: var(--ci-accent);
+  background: rgba(28, 63, 122, 0.09);
+}
+
+.proof {
+  background: rgba(22, 163, 74, 0.045);
+  border-color: rgba(22, 163, 74, 0.18);
+}
+
+.proof .admonition-title {
+  color: var(--ci-tip-ink);
+  background: rgba(22, 163, 74, 0.09);
 }

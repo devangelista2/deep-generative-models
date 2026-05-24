@@ -1,1 +1,68 @@
+# Local datasets and generated build artifacts
 data/
+**/data/
+_build/
+.jupyter_cache/
+.pytest_cache/
+__pycache__/
+**/__pycache__/
+
+# Local virtual environments and package caches
+.venv/
+venv/
+env/
+.env/
+.uv-cache/
+
+# LLM/editor support files that are not course material
+GUIDE.md
+STATUS.md
+TODO*.md
+TODO_*.md
+.codex/
+.codex*
+.claude/
+.claude*
+.cursor/
+.cursor*
+.continue/
+.aider*
+.windsurf/
+.cline/
+.roo/
+.mcp/
+.chatgpt/
+.ipynb_checkpoints/
+CLAUDE.md
+AGENTS.md
+
+# Training outputs, checkpoints, and generated experiment artifacts
+checkpoints/
+outputs/
+runs/
+wandb/
+lightning_logs/
+mlruns/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+
+# Large generated image/data folders
+assets/gt/
+assets/low_probability_samples/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+
+# OS/editor noise
+**/.DS_Store
+Thumbs.db
