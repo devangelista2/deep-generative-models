@@ -23,6 +23,9 @@ exclude_patterns:
   - GUIDE.md
   - STATUS.md
   - TODO_12H_PHD_COURSE.md
+  - 00-overview/index.ipynb
+  - 04-variational-autoencoders/implementation.ipynb
+  - 05-gans/implementation-and-variants.ipynb
   - _build/**
 
 # Information about where the book exists on the web

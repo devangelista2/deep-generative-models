@@ -14,12 +14,10 @@ parts:
     chapters:
       - file: 04-variational-autoencoders/elbo-and-learning
       - file: 04-variational-autoencoders/variants-and-extensions
-      - file: 04-variational-autoencoders/implementation
   - caption: Generative Adversarial Networks
     chapters:
       - file: 05-gans/adversarial-learning
       - file: 05-gans/variants-and-modern-practice
-      - file: 05-gans/implementation-and-variants
   - caption: Diffusion Models
     chapters:
       - file: 06-diffusion-models/discrete-diffusion
