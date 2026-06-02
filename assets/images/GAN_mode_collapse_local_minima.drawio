@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.15 Chrome/134.0.6998.205 Electron/35.2.1 Safari/537.36" version="26.2.15">
+  <diagram name="Page-1" id="Y67KL6duxSLRRQjHswgh">
+    <mxGraphModel dx="679" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fTICb2S16nNhE0nrrAY5-7" value="" style="shape=stencil(7VbLboMwEPyWHnyM5EdD6LFKm0/oNXLAbaw6NjIkgb+vwYaUJUENveSAhAT78O54WI+M2Drf80wgijU/CMTeEKWJOWRKlNtU5oWVu2Mhjd4mSnDtgi5z79MIwd4+e5vGweZ5JpLCO0/cSr5TwkdcPfMtzjItQg2p98LKoo6yd4RfXU79sPWnseLLmqNOe4E2/LRYuI+NVEqkdUcruHs557XkjNftBoE2fDCnev+lRxT2UIE9IroZKZEcra9BAhVtlWATvPSOkoaEYFfBXoYFJevbVbCjSTBWAEYU91GsAAoKUBAMYLSw74NBut0GB8N9HKTji4LGHZLnZR9Jl3EnFEjJpVPbOoK/po+EYohkEieUAU4onBA4IjGgZDAjq0mMDIcEEDKYkhfISAyA/PHQKKl/nbtLlX8UmXZ4lcnFzSy2dv4bCuJkyinQyFIvUx8yl40E4pZ8o1WFZr2a9WrWq8fXq3EF8FeaK4ubZYNrTOP1V67G8QM=);whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="220" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-8" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="200" y="40" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="fTICb2S16nNhE0nrrAY5-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="240" as="sourcePoint" />
+            <mxPoint as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="fTICb2S16nNhE0nrrAY5-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="240" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-11" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=#ffe6cc;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="304" y="254" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-12" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="fTICb2S16nNhE0nrrAY5-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="390" as="sourcePoint" />
+            <mxPoint x="400" y="308.57142857142856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-14" value="Global Optimum \( V^*(D_\Psi, G_\theta) \)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="400" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-15" value="" style="shape=waypoint;sketch=0;size=6;pointerEvents=1;points=[];fillColor=#f8cecc;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="383" y="207" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-16" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="fTICb2S16nNhE0nrrAY5-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="90" as="sourcePoint" />
+            <mxPoint x="476" y="134.57142857142856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fTICb2S16nNhE0nrrAY5-17" value="Local Optimum \( \implies \) mode collpase.&lt;div&gt;&amp;nbsp;\( G_\theta \) generates always the same image that \( D_\Psi \) is &lt;b&gt;unable&lt;/b&gt; to spot.&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="476" y="80" width="120" height="114" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
