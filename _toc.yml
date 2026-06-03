@@ -22,8 +22,8 @@ parts:
     chapters:
       - file: 06-diffusion-models/discrete-diffusion
       - file: 06-diffusion-models/score-based-modeling
-      - file: 06-diffusion-models/prompted-generation-and-modern-use
       - file: 06-diffusion-models/implementation
+      - file: 06-diffusion-models/prompted-generation-and-modern-use
   - caption: Flow Matching
     chapters:
       - file: 07-flow-matching/flow-matching

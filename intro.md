@@ -108,3 +108,10 @@ From a practical perspective, students are expected to have basic programming ex
 ## Assessment
 
 A final assessment is required in order to obtain the PhD credits. The modalities of the exam will be discussed at the beginning of the course, and may include a small project, a practical assignment, or a short report related to the topics covered.
+
+## QrCode for the Course Page
+
+```{figure} assets/images/QRCode.png
+:width: 50%
+:align: center
+```
