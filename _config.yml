@@ -26,6 +26,7 @@ exclude_patterns:
   - 00-overview/index.ipynb
   - 04-variational-autoencoders/implementation.ipynb
   - 05-gans/implementation-and-variants.ipynb
+  - 06-diffusion-models/implementation.ipynb
   - _build/**
 
 # Information about where the book exists on the web
