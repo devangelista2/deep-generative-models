@@ -41,6 +41,7 @@ checkpoints/
 outputs/
 runs/
 wandb/
+exam/
 lightning_logs/
 mlruns/
 *.ckpt
